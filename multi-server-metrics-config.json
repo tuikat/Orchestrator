@@ -1,0 +1,33 @@
+{
+  "servers": {
+    "server1": {
+      "ip": "",
+      "name": "6A",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2", 
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3", 
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4", 
+            "description": "fan4"
+          }
+        ]
+      }
+    }
+  }
+}
