@@ -58,7 +58,7 @@ class NodeMetricsConfig {
 }
 
 async function run(config) {
-  const client = new EmberClient(process.env.STUDIO_IP, process.env.STUDIO_PORT);
+  const client = new EmberClient(process.env.SERVER_IP, process.env.STUDIO_PORT);
   
   client.on("error", e => {
     console.log(e);
