@@ -139,7 +139,7 @@ async function connectToServer(config, serverName, serverConfig) {
         config.networkGauge.set(
           {
             path: network.path,
-            name: extractValue(network.name),
+            name: network.name,
             hostName: extractValue(networkHostName),
             macAdress: extractValue(networkMacAdress),
             ipAdress: extractValue(networkIpAdress),
@@ -166,7 +166,7 @@ async function connectToServer(config, serverName, serverConfig) {
           config.networkGauge.set(
             {
               path: network.path,
-              name: extractValue(network.name),
+              name: network.name,
               hostName: extractValue(networkHostName),
               macAdress: extractValue(networkMacAdress),
               ipAdress: extractValue(networkIpAdress),
