@@ -36,6 +36,14 @@ class MultiServerMetricsConfig {
       labelNames: ['name', 'description', 'source', 'server', 'studio', 'path']
     });
     this.registry.registerMetric(this.fanSpeedGauge);
+
+    // Single network  gauge for all servers
+    this.networkGauge = new client.Gauge({
+      name: 'network',
+      help: 'network details across servers',
+      labelNames: ['path', 'name', 'hostName', 'macAdress', 'ipAdress', 'networkMask', 'gateway', 'linkSpeed', 'linkState', 'switchName', 'switchDescription', 'switchMacAdress', 'switchMgmtAddr', 'switchPortIntfName', 'switchPortDescription', 'vlan', 'source', 'server', 'studio']
+    });
+    this.registry.registerMetric(this.networkGauge);
   }
 
   generateLocation(path) {
@@ -92,6 +100,100 @@ async function connectToServer(config, serverName, serverConfig) {
 
     // Wait for all fans to be processed
     await Promise.all(fanPromises);
+  }
+
+  // Connect to networks
+  if (serverConfig.nodes.networks) {
+    const networkPromises = serverConfig.nodes.networks.map(async (network, index) => {
+      try {
+        const getSafeElement = async (path) => {
+          try {
+            return path ? await client.getElementByPath(path) : { contents: { value: null } };
+          } catch (error) {
+            console.error(`Error retrieving element at path ${path}:`, error);
+            return { contents: { value: null } };
+          }
+        };
+
+        const networkLinkState = await getSafeElement(network.linkState);
+        const networkHostName = await getSafeElement(network.hostName);
+        const networkMacAdress = await getSafeElement(network.macAdress);
+        const networkIpAdress = await getSafeElement(network.ipAdress);
+        const networkNetworkMask = await getSafeElement(network.networkMask);
+        const networkGateway = await getSafeElement(network.gateway);
+        const networkLinkSpeed = await getSafeElement(network.linkSpeed);
+        const networkSwitchName = await getSafeElement(network.switchName);
+        const networkSwitchDescription = await getSafeElement(network.switchDescription);
+        const networkSwitchMacAdress = await getSafeElement(network.switchMacAdress);
+        const networkSwitchMgmtAddr = await getSafeElement(network.switchMgmtAddr);
+        const networkPortIntfName = await getSafeElement(network.portIntfName);
+        const networkSwitchPortDescription = await getSafeElement(network.switchPortDescription);
+        const networkVlan = await getSafeElement(network.vlan);
+
+        // Extract values safely
+        const extractValue = (node) => node?.contents?.value ?? null;
+
+        const parseLinkState = (state) => (state === "up" ? 1 : state === "down" ? 0 : null);
+
+        // Initial value
+        config.networkGauge.set(
+          {
+            path: network.path,
+            name: extractValue(network.name),
+            hostName: extractValue(networkHostName),
+            macAdress: extractValue(networkMacAdress),
+            ipAdress: extractValue(networkIpAdress),
+            networkMask: extractValue(networkNetworkMask),
+            gateway: extractValue(networkGateway),
+            linkSpeed: extractValue(networkLinkSpeed),
+            switchName: extractValue(networkSwitchName),
+            switchDescription: extractValue(networkSwitchDescription),
+            switchMacAdress: extractValue(networkSwitchMacAdress),
+            switchMgmtAddr: extractValue(networkSwitchMgmtAddr),
+            switchPortIntfName: extractValue(networkPortIntfName),
+            switchPortDescription: extractValue(networkSwitchPortDescription),
+            vlan: extractValue(networkVlan),
+            source: "emberplus",
+            server: serverConfig.ip,
+            studio: serverConfig.name,
+          },
+          parseLinkState(extractValue(networkLinkState))
+        );
+
+        // Subscribe to updates
+        client.subscribe(networkLinkState, (updatedNode) => {
+          const linkState = parseLinkState(extractValue(updatedNode));
+          config.networkGauge.set(
+            {
+              path: network.path,
+              name: extractValue(network.name),
+              hostName: extractValue(networkHostName),
+              macAdress: extractValue(networkMacAdress),
+              ipAdress: extractValue(networkIpAdress),
+              networkMask: extractValue(networkNetworkMask),
+              gateway: extractValue(networkGateway),
+              linkSpeed: extractValue(networkLinkSpeed),
+              switchName: extractValue(networkSwitchName),
+              switchDescription: extractValue(networkSwitchDescription),
+              switchMacAdress: extractValue(networkSwitchMacAdress),
+              switchMgmtAddr: extractValue(networkSwitchMgmtAddr),
+              switchortIntfName: extractValue(networkPortIntfName),
+              switchPortDescription: extractValue(networkSwitchPortDescription),
+              vlan: extractValue(networkVlan),
+              source: "emberplus",
+              server: serverConfig.ip,
+              studio: serverConfig.name,
+            },
+            linkState
+          );
+        });
+      } catch (error) {
+        console.error(`Error subscribing to network on ${serverName} at path ${network.path}:`, error);
+      }
+    });
+
+    // Wait for all networks to be processed
+    await Promise.all(networkPromises);
   }
 
   return client;
