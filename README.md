@@ -72,10 +72,13 @@ fan_speed{name="fan4",description="fan4",source="emberplus",server="serverIp",st
 
 When setting up a new Docker container or environment, define the following variables:
 
-| Variable       | Description                                   | Default |
-|---------------|-----------------------------------------------|---------|
-| `METRICS_PORT`| Port for Prometheus metrics                  | `9090`  |
-
----
+| Variable       | Description                                             | Default |
+|---------------|----------------------------------------------------------|---------|
+| `METRICS_PORT`| Port for Prometheus metrics                              | `9090`  |
+|---------------|----------------------------------------------------------|---------|
+| `INFLUXDB_URL`| URL for Influx DB                                        | ``      |
+| `INFLUXDB_TOKEN`| Token for Inflix DB                                    | ``      |
+| `INFLUXDB_ORG`| Influx DB org name                                       | ``      |
+| `INFLUXDB_BUCKET`| Bucket name within Influx DB (DB name within Grafana) | ``      |
 
 ---
