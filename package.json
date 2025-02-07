@@ -9,9 +9,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@influxdata/influxdb-client": "^1.35.0",
     "dotenv": "^16.4.7",
     "emberplus-connection": "^0.2.2",
     "express": "^4.21.2",
+    "influx": "^5.9.7",
     "mathjs": "^14.2.0",
     "prom-client": "^15.1.3"
   }

@@ -1,6 +1,6 @@
 {
-  "servers": {
-    "server1": {
+  "providers": {
+    "provider1": {
       "ip": "",
       "name": "6A",
       "port": 9001,
