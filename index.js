@@ -66,10 +66,8 @@ async function connectToProvider(config, providerName, providerConfig) {
           .tag('fan_name', fan.name)
           .tag('path', fan.path);
 
-        // Handle string values (like "6A") as string fields
         if (typeof value === 'string') {
           point.stringField('speed_raw', value);
-          // Also store numeric component if needed
           const numericValue = config.sanitizeValue(value);
           if (numericValue !== null) {
             point.floatField('speed_numeric', numericValue);
@@ -112,11 +110,66 @@ async function connectToProvider(config, providerName, providerConfig) {
     await Promise.all(fanPromises);
   }
 
-  // Rest of the network metrics code remains the same
-  if (providerConfig.nodes.networks) {
-    // ... (network metrics code)
+  if (providerConfig.nodes.Temperatures) {
+    const tempPromises = providerConfig.nodes.Temperatures.map(async (temp) => {
+      try {
+        const actualTempNode = await client.getElementByPath(temp.actualTemperature);
+        const highLimitNode = await client.getElementByPath(temp.highLimit);
+
+        const actualTemp = actualTempNode.contents.value;
+        const highLimit = highLimitNode.contents.value;
+
+        console.log(`Initial temperature for ${temp.name} at ${temp.actualTemperature}: ${actualTemp}, high limit: ${highLimit}`);
+
+        let point = new Point('temperature')
+          .tag('provider', providerName)
+          .tag('studio', providerConfig.name)
+          .tag('temperature_name', temp.name)
+          .tag('path', temp.path)
+          .floatField('actual_temp', config.sanitizeValue(actualTemp))
+          .floatField('high_limit', config.sanitizeValue(highLimit));
+
+        await writeClient.writePoint(point);
+        console.log('Written temperature point:', point);
+
+        client.subscribe(actualTempNode, (updatedNode) => {
+          const newActualTemp = updatedNode.contents?.value;
+          console.log(`Updated actual temp for ${temp.name}: ${newActualTemp}`);
+
+          let point = new Point('temperature')
+            .tag('provider', providerName)
+            .tag('studio', providerConfig.name)
+            .tag('temperature_name', temp.name)
+            .tag('path', temp.path)
+            .floatField('actual_temp', config.sanitizeValue(newActualTemp));
+
+          writeClient.writePoint(point);
+          console.log('Written updated actual temperature point:', point);
+        });
+
+        client.subscribe(highLimitNode, (updatedNode) => {
+          const newHighLimit = updatedNode.contents?.value;
+          console.log(`Updated high limit for ${temp.name}: ${newHighLimit}`);
+
+          let point = new Point('temperature')
+            .tag('provider', providerName)
+            .tag('studio', providerConfig.name)
+            .tag('temperature_name', temp.name)
+            .tag('path', temp.path)
+            .floatField('high_limit', config.sanitizeValue(newHighLimit));
+
+          writeClient.writePoint(point);
+          console.log('Written updated high limit temperature point:', point);
+        });
+      } catch (error) {
+        console.error(`Error subscribing to temperature on ${providerName} at path ${temp.path}:`, error);
+      }
+    });
+
+    await Promise.all(tempPromises);
   }
 }
+
 
 async function run(config) {
   for (const [providerName, providerConfig] of Object.entries(config.config.providers)) {

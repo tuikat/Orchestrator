@@ -2,6 +2,1671 @@
   "providers": {
     "provider1": {
       "ip": "",
+      "name": "1A",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider2": {
+      "ip": "",
+      "name": "1B",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider3": {
+      "ip": "",
+      "name": "1P",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider4": {
+      "ip": "",
+      "name": "2A",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider5": {
+      "ip": "",
+      "name": "2B",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider6": {
+      "ip": "",
+      "name": "2P",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider7": {
+      "ip": "",
+      "name": "3A",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider8": {
+      "ip": "",
+      "name": "3B",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider9": {
+      "ip": "",
+      "name": "3P",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider10": {
+      "ip": "",
+      "name": "4A",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider11": {
+      "ip": "",
+      "name": "4B",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider12": {
+      "ip": "",
+      "name": "4P",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider13": {
+      "ip": "",
+      "name": "5A",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider14": {
+      "ip": "",
+      "name": "5B",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider15": {
+      "ip": "",
+      "name": "5P",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider16": {
+      "ip": "",
       "name": "6A",
       "port": 9001,
       "nodes": {
@@ -13,18 +1678,710 @@
           },
           {
             "path": "1.29.7.1.1",
-            "name": "fan2", 
+            "name": "fan2",
             "description": "fan2"
           },
           {
             "path": "1.29.7.3.1",
-            "name": "fan3", 
+            "name": "fan3",
             "description": "fan3"
           },
           {
             "path": "1.29.7.4.1",
-            "name": "fan4", 
+            "name": "fan4",
             "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider17": {
+      "ip": "",
+      "name": "6B",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider18": {
+      "ip": "",
+      "name": "6P",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider19": {
+      "ip": "",
+      "name": "7A",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider20": {
+      "ip": "",
+      "name": "7B",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider21": {
+      "ip": "",
+      "name": "8A",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "networks": [
+          {
+            "name": "dwc0",
+            "hostName": "1.28.1.1.1",
+            "macAdress": "1.28.1.1.2",
+            "ipAdress": "1.28.1.1.3",
+            "networkMask": "1.28.1.1.4",
+            "gateway": "1.28.1.1.5",
+            "linkSpeed": "1.28.1.1.6",
+            "linkState": "1.28.1.1.7",
+            "switchName": "1.28.1.1.11",
+            "switchDescription": "1.28.1.1.12",
+            "switchMacAdress": "1.28.1.1.13",
+            "switchMgmtAddr": "1.28.1.1.14",
+            "switchPortIntfName": "1.28.1.1.15",
+            "switchPortDescription": "1.28.1.1.16",
+            "vlan": "1.28.1.1.17",
+            "path": "1.28.1.1"
+          },
+          {
+            "name": "ra0",
+            "hostName": "1.28.1.4.1",
+            "macAdress": "1.28.1.4.2",
+            "ipAdress": "1.28.1.4.3",
+            "networkMask": "1.28.1.4.4",
+            "gateway": "1.28.1.4.5",
+            "linkSpeed": "1.28.1.4.6",
+            "linkState": "1.28.1.4.7",
+            "switchName": "1.28.1.4.11",
+            "switchDescription": "1.28.1.4.12",
+            "switchMacAdress": "1.28.1.4.13",
+            "switchMgmtAddr": "1.28.1.4.14",
+            "switchPortIntfName": "1.28.1.4.15",
+            "switchPortDescription": "1.28.1.4.16",
+            "vlan": "1.28.1.4.17",
+            "path": "1.28.1.4"
+          },
+          {
+            "name": "ra1",
+            "hostName": "1.28.1.5.1",
+            "macAdress": "1.28.1.5.2",
+            "ipAdress": "1.28.1.5.3",
+            "networkMask": "1.28.1.5.4",
+            "gateway": "1.28.1.5.5",
+            "linkSpeed": "1.28.1.5.6",
+            "linkState": "1.28.1.5.7",
+            "switchName": "1.28.1.5.11",
+            "switchDescription": "1.28.1.5.12",
+            "switchMacAdress": "1.28.1.5.13",
+            "switchMgmtAddr": "1.28.1.5.14",
+            "switchPortIntfName": "1.28.1.5.15",
+            "switchPortDescription": "1.28.1.5.16",
+            "vlan": "1.28.1.5.17",
+            "path": "1.28.1.5"
+          }
+        ]
+      }
+    },
+    "provider22": {
+      "ip": "",
+      "name": "8B",
+      "port": 9001,
+      "nodes": {
+        "fans": [
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan1",
+            "description": "fan1"
+          },
+          {
+            "path": "1.29.7.1.1",
+            "name": "fan2",
+            "description": "fan2"
+          },
+          {
+            "path": "1.29.7.3.1",
+            "name": "fan3",
+            "description": "fan3"
+          },
+          {
+            "path": "1.29.7.4.1",
+            "name": "fan4",
+            "description": "fan4"
+          }
+        ],
+        "Temperatures": [
+          {
+            "path": "1.29.6.1",
+            "name": "FPGA Temp",
+            "actualTemperature": "1.29.6.1.1",
+            "highLimit": "1.29.6.1.2"
+          },
+          {
+            "path": "1.29.6.2",
+            "name": "Board Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.3",
+            "name": "Fan Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.6.2.2"
+          },
+          {
+            "path": "1.29.6.4",
+            "name": "DCDC Temp",
+            "actualTemperature": "1.29.6.2.1",
+            "highLimit": "1.29.5.6.4.2"
           }
         ],
         "networks": [
