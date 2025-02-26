@@ -27,6 +27,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": "true",
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -51,6 +98,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -138,6 +205,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -162,6 +276,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -249,6 +383,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -273,6 +454,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -360,6 +561,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -384,6 +632,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -471,6 +739,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -495,6 +810,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -582,6 +917,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -606,6 +988,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -693,6 +1095,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -717,6 +1166,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -804,6 +1273,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -828,6 +1344,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -915,6 +1451,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -939,6 +1522,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1026,6 +1629,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1050,6 +1700,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1137,6 +1807,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1161,6 +1878,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1248,6 +1985,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1272,6 +2056,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1359,6 +2163,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1383,6 +2234,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1470,6 +2341,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1494,6 +2412,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1581,6 +2519,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1605,6 +2590,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1692,6 +2697,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1716,6 +2768,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1803,6 +2875,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1827,6 +2946,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -1914,6 +3053,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -1938,6 +3124,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -2025,6 +3231,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -2049,6 +3302,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -2136,6 +3409,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -2160,6 +3480,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -2247,6 +3587,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -2271,6 +3658,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [
@@ -2358,6 +3765,53 @@
             "description": "fan4"
           }
         ],
+        "systemStates": {
+          "systemType": "1.29.1.1",
+          "M2Mode": "1.29.1.2",
+          "cardPosition": "1.29.1.3",
+          "SerialNumber": "1.29.1.4",
+          "FFPGAVersionNumber": "1.29.1.11",
+          "FFPGACompileDateTimeUnix": "1.29.1.12",
+          "FFPGACompileDateTimeStg": "1.29.1.13",
+          "FPGACompileDateTime": "1.29.1.14",
+          "FFPGARavennaVersionNumber": "1.29.1.15",
+          "UBootVersionNumber": "1.29.1.16",
+          "firmwareVersionNumber": "1.29.1.17",
+          "firmwareCompileDateTime": "1.29.1.18",
+          "systemStartDateTimeUnix": "1.29.1.19",
+          "systemStartDateTimeStg": "1.29.1.20",
+          "CANBusSpeed": "1.29.1.21",
+          "timeZone": "1.29.1.22",
+          "freeConfigurationMemory": "1.29.1.23",
+          "freeSDCardSpace": "1.29.1.24"
+        },
+        "ptp": {
+          "domain": "1.6.1.1.1",
+          "prio1": "1.6.1.1.2",
+          "prio2": "1.6.1.1.3",
+          "masterAnnounceInterval": "1.6.1.1.4",
+          "masterSyncInterval": "1.6.1.1.5",
+          "MasterTTL": "1.6.1.1.6",
+          "slaveOnly": "1.6.1.1.7",
+          "slaveOnlyDelayRequests": "1.6.1.1.8",
+          "delayMechanism": "1.6.1.1.9",
+          "DSCP": "1.6.1.1.10",
+          "slaveWANMode": "1.6.1.1.11",
+          "PTPMode": "1.6.1.2.1",
+          "activeClockIPAdress": "1.6.1.2.2",
+          "activeClockID": "1.6.1.2.3",
+          "activeSourcePortID": "1.6.1.2.4",
+          "grandmasterClockID": "1.6.1.2.5",
+          "timeDifference": "1.6.1.3.1",
+          "clockCorrectionValue": "1.6.1.3.2",
+          "statusSlaveOnlyEngine": "1.6.1.3.3",
+          "stability": "1.6.1.3.4",
+          "syncInterval": "1.6.1.3.5",
+          "servoWindowSize": "1.6.1.3.6",
+          "statusMasterSlaveEngine": "1.6.1.4.1",
+          "ownClockID": "1.6.1.4.2"
+        },
+        "sources": true,
         "Temperatures": [
           {
             "path": "1.29.6.1",
@@ -2382,6 +3836,26 @@
             "name": "DCDC Temp",
             "actualTemperature": "1.29.6.2.1",
             "highLimit": "1.29.5.6.4.2"
+          }
+        ],
+        "Currents": [
+          {
+            "path": "1.29.5.1",
+            "name": "DCDC 12V Input Current",
+            "type": "Input",
+            "value": "1.29.5.1.1"
+          },
+          {
+            "path": "1.29.5.2",
+            "name": "DCDC 3.3V Output Current",
+            "type": "Output",
+            "value": "1.29.5.2.1"
+          },
+          {
+            "path": "1.29.5.3",
+            "name": "DCDC 0.9V Output Current",
+            "type": "Output",
+            "value": "1.29.5.3.1"
           }
         ],
         "networks": [

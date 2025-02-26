@@ -205,10 +205,10 @@ async function connectToProvider(config, providerName, providerConfig) {
                       // Directly store the sanitized value under the metric name as field
                       const sanitizedVal = config.sanitizeValue(initialValue);
                       if (sanitizedVal!== null) {
-                          point.floatField(metricName, sanitizedVal); // Use metricName as field key
+                          point.floatField(metricName, sanitizedVal);
                       } else {
                           // Handle non-numeric values if necessary
-                          point.stringField(metricName, initialValue? initialValue.toString(): 'null'); // Use metricName as field key
+                          point.stringField(metricName, initialValue? initialValue.toString(): 'null');
                       }
 
                       await writeClient.writePoint(point);
@@ -304,6 +304,68 @@ async function connectToProvider(config, providerName, providerConfig) {
         });
         await Promise.all(currentPromises);
     }
+    
+    //----------------------------Offending Code Potentially--------------------------------------------------//
+
+    if (providerConfig.nodes.systemStates) {
+        const systemStateConfig = providerConfig.nodes.systemStates;
+        try {
+            for (const [metricName, path] of Object.entries(systemStateConfig)) {
+                try {
+                    const emberNode = await client.getElementByPath(path);
+                    const initialValue = emberNode.contents.value;
+
+                    console.log(`Initial System State value for ${metricName} at ${path}: ${initialValue}`);
+
+                    let point = new Point('system_state')
+                        .tag('provider', providerName)
+                        .tag('studio', providerConfig.name);
+
+                    const sanitizedVal = config.sanitizeValue(initialValue);
+                    if (sanitizedVal !== null) {
+                        point.floatField(metricName, sanitizedVal);
+                    } else {
+                        point.stringField(metricName, initialValue ? initialValue.toString() : 'null');
+                    }
+
+                    await writeClient.writePoint(point);
+                    console.log('Written System State point:', point);
+
+                    client.subscribe(emberNode, async (updatedNode) => {
+                        try {
+                            const newValue = updatedNode.contents?.value;
+                            console.log(`Updated System State value for ${metricName} at ${path}: ${newValue}`);
+
+                            let updatePoint = new Point('system_state')
+                                .tag('provider', providerName)
+                                .tag('studio', providerConfig.name);
+
+                            const newSanitizedVal = config.sanitizeValue(newValue);
+                            if (newSanitizedVal !== null) {
+                                updatePoint.floatField(metricName, newSanitizedVal);
+                            } else {
+                                updatePoint.stringField(metricName, newValue ? newValue.toString() : 'null');
+                            }
+
+                            writeClient.writePoint(updatePoint);
+                            console.log('Written updated System State point:', updatePoint);
+                        } catch (error) {
+                            console.error(`Error handling System State update for ${metricName} at ${path}:`, error);
+                        }
+                    });
+
+                } catch (error) {
+                    console.error(`Error getting System State metric ${metricName} at ${path}:`, error);
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
+        } catch (error) {
+            console.error(`Error processing System State metrics for ${providerName}:`, error);
+        }
+    }
+
+    //------------------------------------------------------------------------------------------------------//
 
   } catch (error) {
       console.error(`Error connecting to provider ${providerName}:`, error);
